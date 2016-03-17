@@ -123,7 +123,13 @@
                             <constraint firstItem="b2U-Z1-5Wg" firstAttribute="top" secondItem="hR0-74-jRp" secondAttribute="bottom" constant="-64" id="rcA-ti-B0O"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Yelp" id="Dzq-fU-frM"/>
+                    <navigationItem key="navigationItem" title="Yelp" id="Dzq-fU-frM">
+                        <barButtonItem key="rightBarButtonItem" title="Search" id="RV8-a4-nET">
+                            <connections>
+                                <action selector="search:" destination="2xI-yr-O5N" id="5Hy-Ma-d7I"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="tableView" destination="b2U-Z1-5Wg" id="W1D-jF-OLx"/>
